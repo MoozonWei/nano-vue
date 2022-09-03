@@ -45,9 +45,27 @@ const App = {
         h(
           'span',
           {
-            class: 'my-p',
+            class: 'my-span',
           },
           'this is a span 1',
+        ),
+        h(
+          'p',
+          {
+            class: 'my-p',
+          },
+          [
+            h(
+              'span',
+              null,
+              'count: ',
+            ),
+            h(
+              'span',
+              null,
+              context.state.count,
+            ),
+          ],
         ),
       ],
     )
