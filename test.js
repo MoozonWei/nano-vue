@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import { createApp, effectWatch, reactive, ref } from './index.js'
+import { createApp, effectWatch, h, reactive, ref } from './index.js'
 
 // ref
 console.log('--- ref ---')
@@ -26,13 +26,31 @@ me.age++
 
 // vue3
 const App = {
-  // 构建 view
+  // 使用虚拟节点渲染函数 h 构建 view
   render(context) {
-    // 创建视图
-    const div = document.createElement('div')
-    div.innerText = context.state.count
-
-    return div
+    return h(
+      'div',
+      {
+        id: 'vue-app',
+        class: 'base-class',
+      },
+      [
+        h(
+          'p',
+          {
+            class: 'my-p',
+          },
+          'this is a paragraph 1',
+        ),
+        h(
+          'span',
+          {
+            class: 'my-p',
+          },
+          'this is a span 1',
+        ),
+      ],
+    )
   },
   setup() {
     // 创建响应式数据
