@@ -32,7 +32,7 @@ const App = {
       'div',
       {
         id: 'vue-app',
-        class: 'base-class',
+        class: `${context.appClassName.value}`,
       },
       [
         h(
@@ -75,8 +75,10 @@ const App = {
     const state = reactive({
       count: 0,
     })
+    const appClassName = ref('app-class-name')
     const data = {
       state,
+      appClassName,
     }
     window.data = data
     return data
