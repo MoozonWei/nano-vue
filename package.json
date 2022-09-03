@@ -1,0 +1,22 @@
+{
+	"name": "handwrite-vue-reactivity",
+	"version": "1.0.0",
+	"description": "handwrite vue reactivity",
+	"main": "index.js",
+	"scripts": {
+		"test": "vitest --run",
+		"test:watch": "vitest",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix"
+	},
+	"author": "MoozonWei",
+	"license": "ISC",
+	"devDependencies": {
+		"@antfu/eslint-config": "^0.26.2",
+		"@vue/reactivity": "^3.2.38",
+		"eslint": "^8.23.0",
+		"nodemon": "^2.0.19",
+		"typescript": "^4.8.2",
+		"vitest": "^0.22.1"
+	}
+}
