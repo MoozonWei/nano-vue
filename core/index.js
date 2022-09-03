@@ -32,5 +32,6 @@ export {
   reactive,
   ref,
   h,
+  diff,
   mountElement,
 }
