@@ -1,11 +1,12 @@
 /* eslint-disable no-console */
-import { Ref, effectWatch, reactive, ref } from './core/reactivity/index.js'
+import { Ref, createApp, effectWatch, reactive, ref } from './core/index.js'
 
-console.log('Mooni vue module loaded')
+console.log('nano vue module loaded')
 
 export {
   Ref,
-  ref,
-  reactive,
+  createApp,
   effectWatch,
+  reactive,
+  ref,
 }

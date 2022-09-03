@@ -1,4 +1,4 @@
-import { effectWatch } from './reactivity/index.js'
+import { Ref, effectWatch, reactive, ref } from './reactivity/index.js'
 // 仿照 vue3
 export function createApp(rootComponent) {
   return {
@@ -12,4 +12,11 @@ export function createApp(rootComponent) {
       })
     },
   }
+}
+
+export {
+  Ref,
+  effectWatch,
+  reactive,
+  ref,
 }
