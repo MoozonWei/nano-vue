@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
-import { createApp } from './core/index.js'
-import { effectWatch, reactive, ref } from './index.js'
+import { createApp, effectWatch, reactive, ref } from './index.js'
 
 // ref
 console.log('--- ref ---')
